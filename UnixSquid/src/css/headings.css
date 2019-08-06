@@ -1,0 +1,42 @@
+/*Main heading block style*/
+
+.UnS-Heading-main_content {
+    background-color: white;
+}
+
+.UnS-Heading-main {
+    height: 75%;
+    background-color: white;
+    margin-left: 1em;
+}
+
+
+/*Heading title style*/
+
+.UnS-Heading {
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: left;
+    margin-left: 0.5em;
+    font-weight: 900;
+}
+
+.UnS-SubHeading {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 1em;
+    margin-top: -1.5em;
+    margin-left: 1em;
+}
+
+.Uns-ContentHeading {
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 1em;
+}
+
+.Uns-ContentHeadingV2 {
+    font-family: 'Hind Siliguri', sans-serif;
+    text-align: left;
+    color: white;
+    margin-left: 0.5em;
+}

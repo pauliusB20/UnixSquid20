@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Unix Squid - Hardware page</title>
+    <link href="../../src/css/headings.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/form-styles.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/viewportStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/footer-style.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/text-styles.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="UnS-Heading-main_content">
+        <h1 class="UnS-Heading">Unix Squid</h1>
+        <h2 class="UnS-SubHeading">Understand Unix fast</h2>
+
+        <!--Button toolbar-->
+        <div class="sub-UnS-btn-toolbar_new">
+            <button class="Uns_btn1" onclick="window.location.href='../../index.html';">Main Page</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns-commands.html';">Command list</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns-osdistros.html';">Unix OS distributions</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns-hardware.html';">Unix hardware</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns_bashexamples.html';">Bash coding archives</button>
+        </div>
+    </div>
+
+    <div class="Uns-content-form">
+        <div class="Uns-ContentHeading-form">
+            <h1 class="Uns-ContentHeading">Hardware for Unix</h1>
+        </div>
+        <div class="Uns-SubContent-formV2">
+            <h2 class="Uns-ContentHeadingV2">Disk drive types</h2>
+            <p class="Uns-paragraphs">Most, but not all, filesystems reside on the magnetic recording surface of a Hard Disk Drive, <br/> or HDD. HDDs are also called hard drives (because the disks are hard as opposed to floppy), disk drives, or sometimes just disks.<br/> In this
+                document I will usually refer to them as disk drives or HDDs.</p>
+            <p class="Uns-paragraphs">There are three basic types of disk drives that have been available over the years. <br/> These are IDE, SCSI and SATA. The primary differences between these types are with the drive’s electronic <br/> interface to the computer rather than
+                with the disk itself. Although external USB disk drives are available, <br/> they are usually PATA or SATA devices in a simple enclosure with a conversion for connection to a USB interface.</p>
+
+            <li class="Uns-list-text">IDE/PATA (Parallel Advanced Technology Attachment):<br/>These interfaces used to be very common,<br/> but they are being replaced by SATA in newer systems. As the name implies, PATA disks use a parallel interface, <br/> which means that several
+                bits of are transferred at once. <br/> In Linux, PATA disks are identified as /dev/hda, /dev/hdb, and so on.<br/> Partitions are identified by numbers after the device name (e.g. /dev/hda1, /dev/hda2…).<br/><br/>The original PATA devices
+                had data transfer rates of 8MB/Sec. Later versions such as Ultra ATA had data transfer rates of 16 or 32MB/s. ATA-7 has a transfer rate of up to 133MB/s. Only two devices, almost always disk drives or CD-ROM drives could be connected to
+                a single IDE channel interface. As a result, many motherboards had two IDE channels so that up to four devices could be attached. The term IDE is really a misnomer as it does not distinguish one drive type from another. All PC hard drives
+                are IDE, Integrated Drive Electronics, regardless of their bus type, PATA, SCSI, or SATA.</li><br/>
+
+            <li class="Uns-list-text">SATA (Serial Advanced Technology Attachment) – a serial version of the ATA protocol. <br/> As the word serial implies, SATA is a serial bus, which mean that only one bit of data can be transferred <br/> at a time. Unlike with PATA, a single
+                cable can connect only one disk to the motherboard.<br/> Most Linux SATA drivers treat SATA disks as if they were SCSI disks and name them accordingly.<br/><br/> The SATA, or Serial ATA bus has become prevalent since the early 2000’s and
+                it is now difficult to find any other type of disk drive. Almost all motherboards manufactured as of this writing have four or more SATA connectors and a few motherboards have no IDE/PATA connectors at all. SATA speeds were originally
+                about 150MB/s and with the advent of SATA-2, data transfer rates are 600MB/s. SATA-2 also provides better error checking and hot swap capabilities.
+            </li><br/>
+            <li class="Uns-list-text">SCSI (Small Computer System Interface) – a parallel interface that was once common on servers and high-end interfaces. <br/> Supports up to 8 or 16 devices per bus. In Linux, SCSI disks are identified as /dev/sda, /dev/sdb, and so on.<br/>                Partitions are identified by numbers after the device name (e.g. /dev/sda1, /dev/sda2…).<br/><br/> The SCSI, or Small Computer System Interface, was developed in the early 1980’s and was used extensively for connecting hard drives as well
+                as other devices. Originally supporting data transfer rates of 5MB/s, it is now capable of supporting data rates of up to 640MB/s. Up to seven devices may be attached to a single SCSI channel, and the cable length can be significantly
+                longer allowing for much more flexibility. SCSI devices are more expensive than IDE/PATA or SATA devices.
+            </li><br/>
+            <li class="Uns-list-text">
+                USB (Universal serial bus):<br/> USB hard drives—those with real, physical rotating disks—are not really different drive types.<br/> They are generally PATA or SATA drives in an enclosure with a USB bus translator.<br/> USB Thumb drives,
+                which are basically RAM, are true USB devices.
+            </li>
+            <h2 class="Uns-ContentHeadingV2">Additional resource links:</h2>
+            <li class="Uns-list-text"> <a href="http://www.linux-databook.info/?page_id=419">http://www.linux-databook.info/?page_id=419</a></li>
+        </div>
+    </div>
+</body>
+
+</html>

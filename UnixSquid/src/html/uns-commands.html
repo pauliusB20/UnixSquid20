@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unix Squid - Home Page</title>
+    <link href="../../src/css/headings.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/form-styles.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/buttons.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/viewportStyle.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/footer-style.css" rel="stylesheet" type="text/css" />
+    <link href="../../src/css/uns-table-style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!--Main website heading -->
+    <div class="UnS-Heading-main_content">
+        <h1 class="UnS-Heading">Unix Squid</h1>
+        <h2 class="UnS-SubHeading">Understand Unix fast</h2>
+
+        <!--Button toolbar-->
+        <div class="sub-UnS-btn-toolbar_new">
+            <button class="Uns_btn1" onclick="window.location.href='../../index.html';">Main Page</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns-commands.html';">Command list</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns-osdistros.html';">Unix OS distributions</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns-hardware.html';">Unix OS distro hardware</button>
+            <button class="Uns_btn1" onclick="window.location.href = 'uns_bashexamples.html';">Bash coding archives</button>
+        </div>
+    </div>
+
+    <div class="Uns-content-form">
+        <div class="Uns-ContentHeading-form">
+            <h1 class="Uns-ContentHeading">Unix command list</h1>
+        </div>
+
+        <table class="Uns-Command-list-table">
+            <tr>
+                <th>Nr. </th>
+                <th>Command type: </th>
+                <th>Command name:</th>
+                <th>Parameters:</th>
+                <th>Arguments:</th>
+                <th>Command example:</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>User manual for command</th>
+                <th>man</th>
+                <th>[-f] - One may not be able to remember the sections in which a command is present.
+                    <br/>So this option gives the section in which the given command is present.<br/> [-a] - This option helps us to display all the available intro manual pages in succession. <br/> [-k] - This option searches the given command as a<br/>                    regular expression in all the manuals and it returns<br/> the manual pages with the section number in which it is found.<br/> [-w] - This option returns the location in which the manual<br/> page of a given command is present.<br/>                    [-I] - It considers the command as case sensitive.<br/>
+                </th>
+                <th>ls [Options] [Command name]<br/>
+                    <li>Example: ls, cat,..</li>
+                </th>
+                <th>
+                    <li>Note: --version and --help parameters <br/> work for all commands.<br/></li>
+                    <li>man ls, man cat,..<br/>
+                        <li>man -f ls <br/>
+                            <li> man -a intro<br/>
+                                <li>man -k cd<br/>
+                                    <li>man -w ls<br/>
+                                        <li>man -I printf<br/>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    2
+                </th>
+                <th>
+                    listing all the files in the directory
+                </th>
+                <th>
+                    ls
+                </th>
+                <th>
+                    [-a] - Displays all files.<br/> [-b] - Displays nonprinting characters in octal.<br/> [-c] - Displays files by file timestamp.<br/> [-C] - Displays files in a columnar format (default)<br/> [-d] - Displays only directories.<br/> [-f]
+                    Interprets each name as a directory, not a file.<br/> [-F] Flags filenames.<br/> [-g] Displays the long format listing, but exclude the owner name.<br/> [-i] Displays the inode for each file.<br/> [-l] Displays the long format listing.<br/>                    [-L] Displays the file or directory referenced by a symbolic link.<br/> [-m] Displays the names as a comma-separated list.<br/> [-n] Displays the long format listing, with GID and UID numbers.<br/> [-o] Displays the long format listing,
+                    but excludes group name.<br/> [-p] Displays directories with /<br/> [-q] Displays all nonprinting characters as ?<br/> [-r] Displays files in reverse order.<br/> [-R] Displays subdirectories as well.<br/> [-t] Displays newest files
+                    first. (based on timestamp)<br/> [-u] Displays files by the file access time.<br/> [-x] Displays files as rows across the screen.<br/> [-1] Displays each entry on a line.<br/>
+                </th>
+                <th>
+                    ls [Options] [directory name]<br/>
+
+                </th>
+                <th>
+                    <li>ls -a MyDir</li>
+                    <li>ls -al</li>
+                    <li>ls -r</li>
+                    <li>ls C:/</li>
+                    <li>ls /home</li>
+                    <li>ls ..</li>
+                    <li>ls ~/UserName/Downloads</li>
+                    <li>Note: .. - means upper directory</li>
+                    <li>Note: ~ - means home directory</li>
+                </th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Command for making directories</th>
+                <th>mkdir</th>
+                <th>
+                    <li>[-p] - parameter for parenting directories</li>
+                    <li>[-v] - displaying creation results</li>
+                    <li>[-m] - setting custom permissions for folders</li>
+
+                </th>
+                <th>
+                    <li>mkdir [directory name]</li><br/> Example:
+                    <li>mkdir ~/dir1</li>
+
+                </th>
+                <th>
+                    Examples:<br/>
+                    <li>mkdir ~/dir</li>
+                    <li>mkdir -p dir/dir1/dir2/</li>
+                    <li>mkdir -m 777 dir</li>
+                    <li>Note: 777 - permission bits</li>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    4
+                </th>
+                <th>
+                    Command for removing directories
+                </th>
+                <th>
+                    rmdir
+                </th>
+                <th>
+                    <li>[-p] - remove each parent component</li>
+                    <li>[-v] - Display verbose information for every directory processed.</li>
+                    <li>[--verbose] - Display verbose information for every directory processed.</li>
+                    <li>[--ignore-fail-on-non-empty] - removes all empty directories and leaves non empty ones.</li>
+                    <li>[--help] - Displays help messages and exit</li>
+                    <li>[--version] - displays command version and exit</li>
+                </th>
+                <th>
+                    rmdir [options] [directory]
+                </th>
+                <th>
+                    Examples:<br/>
+                    <li>rmdir /home/directory</li>
+                    <li>rmdir -p /directory1/directory2/directory3</li>
+                    <li>rmdir -p -v /directory1/directory2/directory3</li>
+                    <li>rmdir -p --verbose /directory1/directory2/directory3</li>
+                    <li>rmdir -p --ignore-fail-on-non-empty /directory1/directory2/directory3</li>
+                    <li>rmdir --help </li>
+                    <li>rmdir --version</li>
+                </th>
+            </tr>
+            <tr>
+                <!--Row not finished!-->
+                <th>5</th>
+                <th>Command for moving files</th>
+                <th>mv</th>
+                <th>
+                    <li>--backup[=vcm] - Make a backup of each existing <br/> destination file, using the version control method vcm.</li>
+                    <li>[-b] - Like --backup, but does not accept a backup method. <br/> Instead, the method specified by the VERSION_CONTROL environment variable is used.</li>
+                    <li>
+                        [-f], [--force] - Always overwrite existing files without prompting.
+                    </li>
+                </th>
+                <th>
+                    <li>mv [Options] [SOURCE] [DESTINATION]</li>
+
+                </th>
+                <th>
+                    Examples:
+                    <li>mv ~/ExampleSourceDirectory ~/DestinationDirectory/ExampleSourceDirectory</li>
+                    <li>Note: You can use this<br/> command for renaming files</li>
+                    <li>mv ~/file1 ~/K1/file2</li>
+
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    6
+                </th>
+                <th>
+                    Command for copying files
+                </th>
+                <th>
+                    cp
+                </th>
+                <th>
+                    <li>[-a] - archiving files</li>
+                    <li>[--atributes-only] - copying only file attributes, not the file data.</li>
+                    <li>[-f] - force copy by removing the destination file if needed</li>
+                    <li>[--backup] - make a backup of each existing destination file</li>
+                    <li>[-b] - like --backup but does not accept an argument</li>
+                    <li>[--copy-contents] - copy contents of special files when recursive</li>
+                    <li>[-d] same as --no-dereference --preserve=links</li>
+                    <li>[-i], [--interactive] - prompt before overwrite <br/>(overrides a previous -n option)</li>
+                    <li>[-H] - follow command-line symbolic links in SOURCE</li>
+                    <li>[-l], [--link] - hard link files instead of copying</li>
+                    <li> [-R], [-r], [--recursive] - copy directories recursively</li>
+                </th>
+                <th>
+                    cp [Options] [Source] [Directory]
+                </th>
+                <th>
+                    <li>cp ~/file1 file1</li>
+                    <li>cp -r ~/file1 file1</li>
+                </th>
+            </tr>
+
+            <tr>
+                <!----------------------------------------------------------->
+                <th>
+                    7
+                </th>
+                <th>
+                    Command for creating files
+                </th>
+                <th>
+                    touch
+                </th>
+                <th>
+                    <li> [-a] - change only the access time</li>
+                    <li>[-c], [--no-create] - do not create any files</li>
+                    <li>[-d], [--date=STRING] - parse STRING and use it instead of current time</li>
+                    <li>[-h], [--no-dereference] - affect each symbolic link instead of any referenced file <br/> (useful only on systems that can change the timestamps of a symlink)</li>
+                    <li>[-m] - change only the modification time</li>
+                    <li>[-r], [--reference=FILE] - use this file's times instead of current time</li>
+                    <li>[-t] STAMP - use [[CC]YY]MMDDhhmm[.ss] instead of current time</li>
+                    <li> --time=WORD change the specified time: <br/> WORD is access, atime, or use: equivalent to -a WORD is modify or mtime: equivalent to [-m]</li>
+                </th>
+                <th>
+                    touch [Options] [FILE]
+                </th>
+                <th>
+                    <li>touch text.txt</li>
+                </th>
+            </tr>
+            <!---------------------------------------------------------------------------->
+            <tr>
+                <th>
+                    8
+                </th>
+                <th>
+                    Command for printing file text type data
+                </th>
+                <th>
+                    cat
+                </th>
+                <th>
+                    <li>[-A], [--show-all] - equivalent to -vET </li>
+
+                    <li> [-b], [--number-nonblank] - number nonempty output lines, overrides [-n]</li>
+
+                    <li> [-e] - equivalent to -vE</li>
+
+                    <li>[-E], [--show-ends] - display $ at end of each line -n,</li>
+                    <li> [--number] number all output lines [-s],
+                        <li> [--squeeze-blank] suppress repeated empty output lines</li>
+                        <li> [-t] equivalent to [-vT], </li>
+                        <li> [-T], [--show-tabs] display TAB characters as ^I -u (ignored)</li>
+                        <li> -v, --show-nonprinting </li>
+                        <li> use ^ and M- notation, except for LFD and TAB</li>
+                </th>
+                <th>
+                    cat [Options] [SourceFile]
+                </th>
+                <th>
+                    <li>cat file.txt (prints file data on standard output)</li>
+                    <li>cat --number file.txt (Prints line number)</li>
+                </th>
+            </tr>
+
+        </table>
+        <!--Command page buttons-->
+        <div class="uns-page-cm-btn-holder">
+            <button class="uns-cm-page-num" onclick="window.location.href='uns-commands.html';"> 1 </button>
+            <button class="uns-cm-page-num" style="opacity: 0.5;"> 2 </button>
+            <button class="uns-cm-page-num" style="opacity: 0.5;"> 3 </button>
+        </div>
+    </div>
+
+    <div class="Uns-footer">
+        <h3 class="Uns-footer-text">Website creation date: 2019-07-06</h3>
+    </div>
+</body>
+
+</html>
