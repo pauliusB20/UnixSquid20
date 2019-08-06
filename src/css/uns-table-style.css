@@ -1,0 +1,20 @@
+.Uns-Command-list-table {
+    color: white;
+    border: solid;
+    border: 1px lightgray;
+    background: rgba(0, 0, 0, .8);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+table,
+th,
+tr {
+    color: white;
+    border-style: solid;
+    border-color: lightgray;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+th {
+    height: 45%;
+}

@@ -1,0 +1,87 @@
+.Uns_btn {
+    margin-top: 1em;
+    margin-left: 1em;
+    display: inline-block;
+    color: white;
+    border: none;
+    background-color: #404040;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding: 25px 12px;
+}
+
+.Uns_btn:hover {
+    background-color: black;
+    box-shadow: 0 0 8px white;
+    transition-duration: 0.4s;
+}
+
+.Uns_btn:active {
+    background-color: #404040;
+}
+
+.Uns_btn:focus {
+    background-color: darkgrey;
+    transition-duration: 0.2s;
+}
+
+
+/*New button style*/
+
+.Uns_btn1 {
+    margin-left: 1em;
+    display: inline-block;
+    border: none;
+    background-color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+    padding: 18px 8px;
+}
+
+.Uns_btn1:hover {
+    background-color: lightgrey;
+    box-shadow: 0 0 8px white;
+    transition-duration: 0.4s;
+}
+
+.Uns_btn1:active {
+    background-color: #404040;
+}
+
+.Uns_btn1:focus {
+    background-color: darkgrey;
+    transition-duration: 0.2s;
+}
+
+
+/*
+  Unix command page button styles
+  Use hex values for colors
+ */
+
+.uns-cm-page-num {
+    margin-left: 0.5em;
+    display: inline-block;
+    border: none;
+    background-color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 8px;
+}
+
+.uns-cm-page-num:hover {
+    transition: .25s;
+    background-color: #000000;
+    color: #FFFFFF;
+    box-shadow: 0 0 8px #FFFFFF;
+}
+
+.uns-cm-page-num:active {
+    color: #0029FA;
+}
+
+.uns-page-cm-btn-holder {
+    background-color: #000000;
+    opacity: 0.8;
+    border-style: solid;
+}
