@@ -1,5 +1,6 @@
 /*Script'as kuris suteiks galimybe patogiai peržiūrėti svetainės turinį telefone*/
+
 @viewport {
-    width: 320px ;
-    zoom: 1.0 ;
+    zoom: 1.0;
+    width: extend-to-zoom;
 }
